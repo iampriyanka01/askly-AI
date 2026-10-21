@@ -1,0 +1,172 @@
+[
+  {
+    "id": "hr-01",
+    "question": "How many sick days do I get?",
+    "ground_truth": "Employees receive 10 paid sick days per year, accrued monthly. They can be used for personal illness, medical appointments or caring for an ill family member. Notify your manager as soon as practicable and record the time in PeopleHub; documentation may be required for absences of three consecutive days.",
+    "expected_sources": [
+      "sample_policy.md",
+      "hr_handbook.md"
+    ]
+  },
+  {
+    "id": "hr-02",
+    "history": [
+      "How many sick days do I get?"
+    ],
+    "question": "And what about parental leave?",
+    "ground_truth": "Parental leave is 12 weeks paid for birthing parents and 6 weeks paid for non-birthing parents, coordinated with applicable local benefits.",
+    "expected_sources": [
+      "sample_policy.md",
+      "hr_handbook.md"
+    ]
+  },
+  {
+    "id": "hr-03",
+    "question": "How much PTO do I get after 4 years at the company?",
+    "ground_truth": "In years 3 to 5 employees accrue 1.67 days per month, which is 20 days of PTO annually. Up to 5 days can be carried over, and PTO for absences of three days or more must be requested in PeopleHub at least 10 calendar days in advance.",
+    "expected_sources": [
+      "sample_policy.md"
+    ]
+  },
+  {
+    "id": "hr-04",
+    "question": "How do I apply for medical leave for a planned surgery?",
+    "ground_truth": "Request PTO or the applicable medical leave in PeopleHub as soon as the date is scheduled, attach supporting documentation and coordinate a handover plan with your manager. Managers approve or deny leave within two business days.",
+    "expected_sources": [
+      "sample_policy.md"
+    ]
+  },
+  {
+    "id": "hr-05",
+    "question": "How many days a week do I need to be in the office?",
+    "ground_truth": "The documents disagree. The Global People & Policy Manual says office-aligned roles are onsite two days per week, while the Operations manual's hybrid work policy says the standard model is 3 days in office and 2 days remote. Fully remote roles need VP approval. Askly should point out the conflict and suggest confirming with HR.",
+    "expected_sources": [
+      "sample_policy.md",
+      "company_operations.md"
+    ],
+    "conflict": true
+  },
+  {
+    "id": "hr-06",
+    "question": "How do I raise a grievance?",
+    "ground_truth": "Raise concerns with your manager or HR. Formal grievances are submitted via PeopleHub, acknowledged within 3 business days and investigated impartially, typically within 15 business days. Retaliation for raising concerns in good faith is prohibited.",
+    "expected_sources": [
+      "sample_policy.md"
+    ]
+  },
+  {
+    "id": "ben-01",
+    "question": "What is the 401k match?",
+    "ground_truth": "The company matches 401(k) contributions at 4% of eligible compensation, with immediate vesting.",
+    "expected_sources": [
+      "hr_handbook.md",
+      "sample_policy.md"
+    ]
+  },
+  {
+    "id": "it-01",
+    "question": "How do I set up the VPN to work from home?",
+    "ground_truth": "Download the VPN client from the Company Portal, install and configure it with the credentials provided, test the connection before working remotely, keep the client updated and report connection issues immediately. VPN is required for remote access.",
+    "expected_sources": [
+      "it_support_guide.md"
+    ]
+  },
+  {
+    "id": "it-02",
+    "question": "My account is locked, what should I do?",
+    "ground_truth": "Accounts lock after 5 failed login attempts and unlock automatically after 30 minutes. Contact IT if you are locked out for more than 30 minutes; repeated lockouts are reviewed by the security team.",
+    "expected_sources": [
+      "it_support_guide.md"
+    ]
+  },
+  {
+    "id": "it-03",
+    "question": "What are the password requirements?",
+    "ground_truth": "Passwords need at least 12 characters with uppercase, lowercase, numbers and special characters, cannot reuse the last 12 passwords, must be changed every 90 days, and two-factor authentication is required.",
+    "expected_sources": [
+      "it_support_guide.md"
+    ]
+  },
+  {
+    "id": "it-04",
+    "question": "What happens if I lose my company phone?",
+    "ground_truth": "Lost or stolen devices must be reported within 24 hours; company devices are enrolled in mobile device management and can be remotely wiped.",
+    "expected_sources": [
+      "it_support_guide.md"
+    ]
+  },
+  {
+    "id": "fin-01",
+    "question": "What are the per diem rates for international travel?",
+    "ground_truth": "International per diem is $75 per day for meals and $25 per day for incidentals; international lodging varies by location.",
+    "expected_sources": [
+      "finance_procedures.md"
+    ]
+  },
+  {
+    "id": "fin-02",
+    "question": "Can I fly business class?",
+    "ground_truth": "Business class is allowed for international flights over 6 hours; domestic flights are economy class. Book through the corporate travel portal.",
+    "expected_sources": [
+      "finance_procedures.md"
+    ]
+  },
+  {
+    "id": "fin-03",
+    "question": "How soon do I have to submit my travel expense report?",
+    "ground_truth": "Complete the travel expense report within 5 days, keeping all receipts and boarding passes, including the business purpose of each expense, submitted through the expense management system for manager approval.",
+    "expected_sources": [
+      "finance_procedures.md"
+    ]
+  },
+  {
+    "id": "fin-04",
+    "question": "When do we get paid?",
+    "ground_truth": "Pay dates are the 15th and the last day of the month with direct deposit by 9:00 AM, although the same section also calls payroll bi-weekly, which conflicts with twice-monthly pay dates. Pay stubs are available online.",
+    "expected_sources": [
+      "finance_procedures.md"
+    ],
+    "conflict": true
+  },
+  {
+    "id": "ops-01",
+    "question": "What should I do if there is a fire in the office?",
+    "ground_truth": "Pull the nearest fire alarm, call 911 with the exact location, evacuate by the nearest exit without using elevators, close doors behind you without locking them and meet at the designated assembly point. Do not re-enter until the fire department clears the building.",
+    "expected_sources": [
+      "company_operations.md",
+      "sample_policy.md"
+    ]
+  },
+  {
+    "id": "cust-01",
+    "user_type": "customer",
+    "question": "What is the response time for a critical issue on the Platinum tier?",
+    "ground_truth": "Platinum tier critical issues get a 15-minute initial response and a 2-hour resolution target, with a dedicated Technical Account Manager.",
+    "expected_sources": [
+      "customer_service_guide.md"
+    ]
+  },
+  {
+    "id": "cust-02",
+    "user_type": "customer",
+    "question": "When does a support ticket get escalated to Tier 2?",
+    "ground_truth": "A Tier 1 issue is escalated when it is unresolved after 2 documented resolution attempts, the customer requests a technical specialist, it is beyond Tier 1 scope, it is a billing dispute over $1,000, or it is security-related.",
+    "expected_sources": [
+      "customer_service_guide.md"
+    ]
+  },
+  {
+    "id": "gap-01",
+    "question": "Can I bring my dog to the office?",
+    "ground_truth": "The knowledge base has no pet policy, so Askly should say it does not know and offer to escalate.",
+    "expected_sources": [],
+    "expect_gap": true
+  },
+  {
+    "id": "gap-02",
+    "question": "What is the stock option vesting schedule for employees?",
+    "ground_truth": "The knowledge base does not describe employee stock options, so Askly should say it does not know and offer to escalate.",
+    "expected_sources": [],
+    "expect_gap": true
+  }
+]

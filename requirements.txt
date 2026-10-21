@@ -1,0 +1,24 @@
+python-dotenv>=1.0
+pydantic>=2.7,<3
+pydantic-settings>=2.3
+langchain-core>=1.0,<2
+langchain-text-splitters>=1.0
+# LLM + embeddings: Gemini (default) and/or OpenAI - install the one you use (both is fine)
+langchain-google-genai>=3.0
+langchain-openai>=1.0
+# langchain-community stays below 0.4: ragas 0.4.x imports a module that 0.4 removed.
+langchain-community>=0.3,<0.4
+# Dense vector store: FAISS (local, default) or Pinecone
+faiss-cpu>=1.8
+pinecone>=7.0
+# Sparse retrieval
+rank-bm25>=0.2.2
+pypdf>=5.0
+pandas>=2.0
+streamlit>=1.50
+ragas>=0.4,<0.5
+# Optional: local cross-encoder reranker (set RERANKER_MODEL in .env)
+# sentence-transformers>=3.0
+# Dev
+pytest>=8.0
+reportlab>=4.0   # only for scripts/make_sample_pdfs.py

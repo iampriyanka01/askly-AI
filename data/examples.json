@@ -1,0 +1,12 @@
+{
+  "employee": [
+    "How many sick days do I get?",
+    "How do I set up the VPN to work from home?",
+    "What are the per diem rates for international travel?"
+  ],
+  "customer": [
+    "What is the response time for a critical issue on the Platinum tier?",
+    "When does a support ticket get escalated to Tier 2?",
+    "How is my data protected?"
+  ]
+}
