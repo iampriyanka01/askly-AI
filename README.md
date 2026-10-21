@@ -158,7 +158,7 @@ GOOGLE_API_KEY=AIza...            # or OPENAI_API_KEY=sk-...
 ### Run
 
 ```bash
-python main.py              # checks setup, indexes, runs the 3 demo scenarios, opens a menu
+python main.py              # checks setup, indexes, runs the 5 demo scenarios, opens a menu
 python main.py --chat       # chat in the terminal (/good, /bad, /escalate, /new, /quit)
 python main.py --eval       # evaluation only
 python main.py --offline    # ignore API keys
